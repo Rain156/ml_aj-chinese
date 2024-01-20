@@ -21,22 +21,22 @@ data modify storage ml_aj:logic data.player.temp.sit_idle_text set from storage 
 data modify storage ml_aj:logic data.player.temp.stand set from entity @s item.tag.data.anims.stand.name
 data modify storage ml_aj:logic data.player.temp.stand_text set from storage ml_aj:logic data.player.temp.stand
 
-execute if data entity @s {item:{tag:{data:{anims:{idle:{time:0}}}}}} run data modify storage ml_aj:logic data.player.temp.idle set value "None Found"
-execute if data entity @s {item:{tag:{data:{anims:{idle:{name:""}}}}}} run data modify storage ml_aj:logic data.player.temp.idle_text set value "Set Name Here"
-execute if data entity @s {item:{tag:{data:{anims:{walk:{time:0}}}}}} run data modify storage ml_aj:logic data.player.temp.walk set value "None Found"
-execute if data entity @s {item:{tag:{data:{anims:{walk:{name:""}}}}}} run data modify storage ml_aj:logic data.player.temp.walk_text set value "Set Name Here"
-execute if data entity @s {item:{tag:{data:{anims:{swim:{time:0}}}}}} run data modify storage ml_aj:logic data.player.temp.swim set value "None Found"
-execute if data entity @s {item:{tag:{data:{anims:{swim:{name:""}}}}}} run data modify storage ml_aj:logic data.player.temp.swim_text set value "Set Name Here"
-execute if data entity @s {item:{tag:{data:{anims:{death:{time:0}}}}}} run data modify storage ml_aj:logic data.player.temp.death set value "None Found"
-execute if data entity @s {item:{tag:{data:{anims:{death:{name:""}}}}}} run data modify storage ml_aj:logic data.player.temp.death_text set value "Set Name Here"
-execute if data entity @s {item:{tag:{data:{anims:{despawn:{time:0}}}}}} run data modify storage ml_aj:logic data.player.temp.despawn set value "None Found"
-execute if data entity @s {item:{tag:{data:{anims:{despawn:{name:""}}}}}} run data modify storage ml_aj:logic data.player.temp.despawn_text set value "Set Name Here"
-execute if data entity @s {item:{tag:{data:{anims:{sit:{time:0}}}}}} run data modify storage ml_aj:logic data.player.temp.sit set value "None Found"
-execute if data entity @s {item:{tag:{data:{anims:{sit:{name:""}}}}}} run data modify storage ml_aj:logic data.player.temp.sit_text set value "Set Name Here"
-execute if data entity @s {item:{tag:{data:{anims:{sit_idle:{time:0}}}}}} run data modify storage ml_aj:logic data.player.temp.sit_idle set value "None Found"
-execute if data entity @s {item:{tag:{data:{anims:{sit_idle:{name:""}}}}}} run data modify storage ml_aj:logic data.player.temp.sit_idle_text set value "Set Name Here"
-execute if data entity @s {item:{tag:{data:{anims:{stand:{time:0}}}}}} run data modify storage ml_aj:logic data.player.temp.stand set value "None Found"
-execute if data entity @s {item:{tag:{data:{anims:{stand:{name:""}}}}}} run data modify storage ml_aj:logic data.player.temp.stand_text set value "Set Name Here"
+execute if data entity @s {item:{tag:{data:{anims:{idle:{time:0}}}}}} run data modify storage ml_aj:logic data.player.temp.idle set value "无"
+execute if data entity @s {item:{tag:{data:{anims:{idle:{name:""}}}}}} run data modify storage ml_aj:logic data.player.temp.idle_text set value "在此处设置名称"
+execute if data entity @s {item:{tag:{data:{anims:{walk:{time:0}}}}}} run data modify storage ml_aj:logic data.player.temp.walk set value "无"
+execute if data entity @s {item:{tag:{data:{anims:{walk:{name:""}}}}}} run data modify storage ml_aj:logic data.player.temp.walk_text set value "在此处设置名称"
+execute if data entity @s {item:{tag:{data:{anims:{swim:{time:0}}}}}} run data modify storage ml_aj:logic data.player.temp.swim set value "无"
+execute if data entity @s {item:{tag:{data:{anims:{swim:{name:""}}}}}} run data modify storage ml_aj:logic data.player.temp.swim_text set value "在此处设置名称"
+execute if data entity @s {item:{tag:{data:{anims:{death:{time:0}}}}}} run data modify storage ml_aj:logic data.player.temp.death set value "无"
+execute if data entity @s {item:{tag:{data:{anims:{death:{name:""}}}}}} run data modify storage ml_aj:logic data.player.temp.death_text set value "在此处设置名称"
+execute if data entity @s {item:{tag:{data:{anims:{despawn:{time:0}}}}}} run data modify storage ml_aj:logic data.player.temp.despawn set value "无"
+execute if data entity @s {item:{tag:{data:{anims:{despawn:{name:""}}}}}} run data modify storage ml_aj:logic data.player.temp.despawn_text set value "在此处设置名称"
+execute if data entity @s {item:{tag:{data:{anims:{sit:{time:0}}}}}} run data modify storage ml_aj:logic data.player.temp.sit set value "无"
+execute if data entity @s {item:{tag:{data:{anims:{sit:{name:""}}}}}} run data modify storage ml_aj:logic data.player.temp.sit_text set value "在此处设置名称"
+execute if data entity @s {item:{tag:{data:{anims:{sit_idle:{time:0}}}}}} run data modify storage ml_aj:logic data.player.temp.sit_idle set value "无"
+execute if data entity @s {item:{tag:{data:{anims:{sit_idle:{name:""}}}}}} run data modify storage ml_aj:logic data.player.temp.sit_idle_text set value "在此处设置名称"
+execute if data entity @s {item:{tag:{data:{anims:{stand:{time:0}}}}}} run data modify storage ml_aj:logic data.player.temp.stand set value "无"
+execute if data entity @s {item:{tag:{data:{anims:{stand:{name:""}}}}}} run data modify storage ml_aj:logic data.player.temp.stand_text set value "在此处设置名称"
 
 execute if data entity @s {item:{tag:{data:{vehicle:{hostile:1}}}}} run data modify storage ml_aj:logic data.player.temp.hostile set value 1b
 execute if entity @s[tag=ml_aj.is_pet] run data modify storage ml_aj:logic data.player.temp.pet set value 1b

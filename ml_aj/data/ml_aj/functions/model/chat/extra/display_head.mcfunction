@@ -3,4 +3,4 @@
 ## "head": The head name
 
 data modify storage ml_aj:logic data.player.temp.rotation set value "True"
-$data modify storage ml_aj:logic data.player.temp.head set value [{"text":" |  ","hoverEvent":{"action":"show_text","contents":"Click to set the name (or tag) of the model's head bone (When the command shows up in your chat, edit the value between the quotation marks, and press Enter)"},"clickEvent":{"action":"suggest_command","value":"/function ml_aj:edit/head {name:\"$(head)\"}"}},{"text":"Head Bone: ","hoverEvent":{"action":"show_text","contents":"The name of the head bone that will rotate to face the player (or the tag that is used for one or more bones that will rotate)"}},{"text":"$(head)","color":"green"}]
+$data modify storage ml_aj:logic data.player.temp.head set value [{"text":" |  ","hoverEvent":{"action":"show_text","contents":"将要进行旋转的骨骼名称\n(单击以填入要旋转的模型块或模型组)"},"clickEvent":{"action":"suggest_command","value":"/function ml_aj:edit/head {name:\"$(head)\"}"}},{"text":"头部骨骼: ","hoverEvent":{"action":"show_text","contents":"将要进行旋转的骨骼名称\n(单击以填入要旋转的模型块或模型组)"}},{"text":"$(head)","color":"green"}]

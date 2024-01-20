@@ -9,4 +9,4 @@ $execute as $(id) run function ml_aj:model/chat/anim/set_anim_final with storage
 
 $function ml_aj:model/chat/anim/display {id:"$(id)"}
 
-$execute if data storage ml_aj:logic {data:{temp:{anim_set:{result:0}}}} unless data storage ml_aj:logic {data:{temp:{anim_set:{blank:"$(name)"}}}} run tellraw @s [{"text":"\n","color":"red"},{"text":"The name "},{"text":"$(name)","color":"gold"},{"text":" for the "},{"text":"$(anim)","color":"gold"},{"text":" animation could not be found.\n"}]
+$execute if data storage ml_aj:logic {data:{temp:{anim_set:{result:0}}}} unless data storage ml_aj:logic {data:{temp:{anim_set:{blank:"$(name)"}}}} run tellraw @s [{"text":"\n","color":"red"},{"text":"未找到名称为: "},{"text":"$(name)","color":"gold"},{"text":" 的动画 \n不存在的动画将无法应用于模型的 "},{"text":"$(anim)","color":"gold"},{"text":" 动画\n"}]

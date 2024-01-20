@@ -8,4 +8,4 @@ $execute as $(id) run function ml_aj:model/chat/anim/attack/add_final with stora
 
 $function ml_aj:model/chat/anim/attack/display {id:"$(id)"}
 
-$execute if data storage ml_aj:logic {data:{temp:{anim_set:{result:0}}}} unless data storage ml_aj:logic {data:{temp:{anim_set:{blank:"$(name)"}}}} run tellraw @s [{"text":"","color":"red"},{"text":"\nThe attack animation named "},{"text":"$(name)","color":"gold"},{"text":" could not be found for the "},{"storage":"ml_aj:logic","nbt":"data.temp.anim_set.model","color":"gold"},{"text":" model.\n"}]
+$execute if data storage ml_aj:logic {data:{temp:{anim_set:{result:0}}}} unless data storage ml_aj:logic {data:{temp:{anim_set:{blank:"$(name)"}}}} run tellraw @s [{"text":"","color":"red"},{"text":"\n未能在名为: "},{"storage":"ml_aj:logic","nbt":"data.temp.anim_set.model","color":"gold"},{"text":" 的模型中找到叫做 "},{"text":"$(name)","color":"gold"},{"text":" 的动画.\n"}]

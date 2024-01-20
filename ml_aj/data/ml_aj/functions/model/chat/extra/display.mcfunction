@@ -1,7 +1,7 @@
 ## player context
 ## "id": The model's UUID string
 
-$data modify storage ml_aj:logic data.player.temp set value {id:"$(id)",badge:0,brightness:"Auto",view:1f,shadow:"0.5",opacity:"1.0",rotation:"False",head:{"text":""},suggest:"",reload:'(No Callback Set)',reload_suggest:"Set Command Here",damage:'(No Callback Set)',damage_suggest:"Set Command Here",death:'(No Callback Set)',death_suggest:"Set Command Here"}
+$data modify storage ml_aj:logic data.player.temp set value {id:"$(id)",badge:0,brightness:"Auto",view:1f,shadow:"0.5",opacity:"1.0",rotation:"False",head:{"text":""},suggest:"",reload:'(未设置回调命令)',reload_suggest:"在此处填入命令",damage:'(未设置回调命令)',damage_suggest:"在此处填入命令",death:'(未设置回调命令)',death_suggest:"在此处填入命令"}
 
 #Create a temporary lookup for this entity's UUID for simplified edit commands
 $data modify storage ml_aj:logic data.player.temp.item_data set value "$(id)"

@@ -1,7 +1,7 @@
 ## player context
 ## "id": The model's UUID string
 
-$data modify storage ml_aj:logic data.player.temp set value {id:"$(id)",badge:0,loop:{id:"$(id)",badge:0,index:0},select:"Random"}
+$data modify storage ml_aj:logic data.player.temp set value {id:"$(id)",badge:0,loop:{id:"$(id)",badge:0,index:0},select:"随机执行"}
 $execute as $(id) run data modify storage ml_aj:logic data.player.temp.badge set from entity @s item.tag.data.badge
 data modify storage ml_aj:logic data.player.temp.loop.badge set from storage ml_aj:logic data.player.temp.badge
 

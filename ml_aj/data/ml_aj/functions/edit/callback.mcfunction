@@ -6,7 +6,7 @@ execute if data entity @s {Inventory:[{tag:{data:{item:"ml_aj.edit",item_data:""
 
 $data modify storage ml_aj:logic data.player.temp set value {id:"",index:$(i),cmd:'$(cmd)'}
 data modify storage ml_aj:logic data.player.temp.id set from entity @s Inventory[{tag:{data:{item:"ml_aj.edit"}}}].tag.data.item_data
-execute if data storage ml_aj:logic {data:{player:{temp:{cmd:'Set Command Here'}}}} run data modify storage ml_aj:logic data.player.temp.cmd set value ''
+execute if data storage ml_aj:logic {data:{player:{temp:{cmd:'在此处设置命令'}}}} run data modify storage ml_aj:logic data.player.temp.cmd set value ''
 
 #Check if function begins with /
 scoreboard players set @s ml_aj.temp 0

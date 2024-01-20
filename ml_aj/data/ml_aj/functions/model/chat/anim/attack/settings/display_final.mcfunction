@@ -33,22 +33,22 @@ execute store result storage ml_aj:logic data.player.temp.cooldown float 0.1 run
 data modify storage ml_aj:logic data.player.temp.cooldown set string storage ml_aj:logic data.player.temp.cooldown 0 -1
 
 #Projectile
-execute if data storage ml_aj:logic {data:{player:{temp:{anim:{proj:"arrow"}}}}} run data modify storage ml_aj:logic data.player.temp.projectile set value "Arrow"
-execute if data storage ml_aj:logic {data:{player:{temp:{anim:{proj:"potion"}}}}} run data modify storage ml_aj:logic data.player.temp.projectile set value "Potion"
-execute if data storage ml_aj:logic {data:{player:{temp:{anim:{proj:"spectral_arrow"}}}}} run data modify storage ml_aj:logic data.player.temp.projectile set value "Spectral Arrow"
-execute if data storage ml_aj:logic {data:{player:{temp:{anim:{proj:"trident"}}}}} run data modify storage ml_aj:logic data.player.temp.projectile set value "Trident"
-execute if data storage ml_aj:logic {data:{player:{temp:{anim:{proj:"wither_skull"}}}}} run data modify storage ml_aj:logic data.player.temp.projectile set value "Wither Skull"
-execute if data storage ml_aj:logic {data:{player:{temp:{anim:{proj:"snowball"}}}}} run data modify storage ml_aj:logic data.player.temp.projectile set value "Snowball"
-execute if data storage ml_aj:logic {data:{player:{temp:{anim:{proj:"fireball"}}}}} run data modify storage ml_aj:logic data.player.temp.projectile set value "Fireball"
-execute if data storage ml_aj:logic {data:{player:{temp:{anim:{proj:"small_fireball"}}}}} run data modify storage ml_aj:logic data.player.temp.projectile set value "Small Fireball"
-execute if data storage ml_aj:logic {data:{player:{temp:{anim:{proj:"dragon_fireball"}}}}} run data modify storage ml_aj:logic data.player.temp.projectile set value "Dragon Fireball"
+execute if data storage ml_aj:logic {data:{player:{temp:{anim:{proj:"arrow"}}}}} run data modify storage ml_aj:logic data.player.temp.projectile set value "箭"
+execute if data storage ml_aj:logic {data:{player:{temp:{anim:{proj:"potion"}}}}} run data modify storage ml_aj:logic data.player.temp.projectile set value "药水"
+execute if data storage ml_aj:logic {data:{player:{temp:{anim:{proj:"spectral_arrow"}}}}} run data modify storage ml_aj:logic data.player.temp.projectile set value "光灵箭"
+execute if data storage ml_aj:logic {data:{player:{temp:{anim:{proj:"trident"}}}}} run data modify storage ml_aj:logic data.player.temp.projectile set value "三叉戟"
+execute if data storage ml_aj:logic {data:{player:{temp:{anim:{proj:"wither_skull"}}}}} run data modify storage ml_aj:logic data.player.temp.projectile set value "凋灵头颅"
+execute if data storage ml_aj:logic {data:{player:{temp:{anim:{proj:"snowball"}}}}} run data modify storage ml_aj:logic data.player.temp.projectile set value "雪球"
+execute if data storage ml_aj:logic {data:{player:{temp:{anim:{proj:"fireball"}}}}} run data modify storage ml_aj:logic data.player.temp.projectile set value "火球"
+execute if data storage ml_aj:logic {data:{player:{temp:{anim:{proj:"small_fireball"}}}}} run data modify storage ml_aj:logic data.player.temp.projectile set value "小火球"
+execute if data storage ml_aj:logic {data:{player:{temp:{anim:{proj:"dragon_fireball"}}}}} run data modify storage ml_aj:logic data.player.temp.projectile set value "龙息"
 execute if data storage ml_aj:logic data.player.temp.anim.proj run function ml_aj:model/chat/anim/attack/settings/display_proj_speed with storage ml_aj:logic data.player.temp.anim
 execute if data storage ml_aj:logic data.player.temp.anim.proj_nbt run function ml_aj:model/chat/anim/attack/settings/display_proj_nbt with storage ml_aj:logic data.player.temp.anim
 
 #Callback
 execute if data storage ml_aj:logic data.player.temp.anim.command run data modify storage ml_aj:logic data.player.temp.command set from storage ml_aj:logic data.player.temp.anim.command
 execute if data storage ml_aj:logic data.player.temp.anim.command run data modify storage ml_aj:logic data.player.temp.suggest set from storage ml_aj:logic data.player.temp.anim.command
-execute unless data storage ml_aj:logic data.player.temp.anim.command run data modify storage ml_aj:logic data.player.temp.suggest set value "Set Command Here"
+execute unless data storage ml_aj:logic data.player.temp.anim.command run data modify storage ml_aj:logic data.player.temp.suggest set value "在此处设置命令"
 function ml_aj:system/data/safe_suggest
 execute if data storage ml_aj:logic data.player.temp.anim.command if data storage ml_aj:logic {data:{player:{temp:{anim:{cmd_time:0}}}}} run data modify storage ml_aj:logic data.player.temp.cmd_time set value "First Frame"
 execute if data storage ml_aj:logic data.player.temp.anim.command if data storage ml_aj:logic {data:{player:{temp:{anim:{cmd_time:1}}}}} run data modify storage ml_aj:logic data.player.temp.cmd_time set value "Hit Time"
