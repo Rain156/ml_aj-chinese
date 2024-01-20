@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_killed_entity"
+        }
+    },
+    "rewards": {
+        "function": "ml_ces:system/event/player/attack/kill/start"
+    }
+}

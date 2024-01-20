@@ -1,0 +1,13 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": [
+      {
+        "nbt": "data.text.interpret.input",
+        "storage": "ml_aj:logic",
+        "interpret": false
+      }
+    ]
+  }
+]

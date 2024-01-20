@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "nbt": "{Tags:[ml_aj.model_move]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "ml_aj:player/interact/model/move"
+    }
+}

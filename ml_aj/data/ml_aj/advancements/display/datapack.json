@@ -1,0 +1,17 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:zombie_head"
+		},
+		"title": "MLAJ",
+		"description": "Assists with setting up custom Animated Java models",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"parent": "global:michaelslife",
+	"criteria": {
+		"trigger": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}
