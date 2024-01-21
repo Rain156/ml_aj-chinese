@@ -19,4 +19,4 @@ execute if data storage ml_aj:logic {data:{temp:{ai:{anim:{time:0}}}}} run score
 #Run the attack
 execute unless score @s ml_aj.temp matches -1 store result score @s ml_aj.temp at @s run function ml_aj:ai/attack/custom/execute with storage ml_aj:logic data.temp.ai.anim
 
-$execute if score @s ml_aj.temp matches -1 run tellraw @a[tag=debug] [{"text":"\n","color":"red"},{"text":"Failed to play the "},{"text":"$(name)","color":"gold"},{"text":" attack for the target model "},{"selector":"@s","color":"gold"},{"text":".\n"}]
+$execute if score @s ml_aj.temp matches -1 run tellraw @a[tag=debug] [{"text":"\n","color":"red"},{"text":"未能成功播放模型: "},{"text":"$(name)","color":"gold"},{"text":" 的攻击动画 "},{"selector":"@s","color":"gold"},{"text":".\n"}]

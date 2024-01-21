@@ -10,6 +10,6 @@ execute if score #ml_temp ml_aj.temp matches 1 run return 1
 
 function ml_aj:system/player/chat_clear
 
-$tellraw @s [{"text":"\nAre you sure you want to setup this Animated Java Model with the MLAJ System?\n","color":"gold"},{"text":"[Confirm]","color":"green","hoverEvent":{"action":"show_text","contents":"Confirm Setup"},"clickEvent":{"action":"run_command","value":"/function ml_aj:model/find/confirm_new {id:\"$(id)\"}"}},{"text":"  "},{"text":"[Cancel]","color":"red","hoverEvent":{"action":"show_text","contents":"Cancel Setup"},"clickEvent":{"action":"run_command","value":"/function ml_aj:system/player/chat_clear"}},{"text":"\n"}]
+$tellraw @s [{"text":"\n您确定要使用ML_AJ系统来编辑此Animated Java模型吗?\n","color":"gold"},{"text":"[确定]","color":"green","hoverEvent":{"action":"show_text","contents":"确认使用ML_AJ"},"clickEvent":{"action":"run_command","value":"/function ml_aj:model/find/confirm_new {id:\"$(id)\"}"}},{"text":"  "},{"text":"[取消]","color":"red","hoverEvent":{"action":"show_text","contents":"取消使用ML_AJ"},"clickEvent":{"action":"run_command","value":"/function ml_aj:system/player/chat_clear"}},{"text":"\n"}]
 
 return 1

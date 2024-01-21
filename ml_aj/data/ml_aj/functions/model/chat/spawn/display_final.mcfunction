@@ -25,6 +25,6 @@ function ml_aj:system/data/json/to_json
 
 scoreboard players set @s ml_aj.temp 1
 execute store success score @s ml_aj.temp run data modify storage ml_aj:logic data.spawn.save_check set from storage ml_aj:logic data.text.interpret.output
-execute if score @s ml_aj.temp matches 1 run data modify storage ml_aj:logic data.player.temp.edited set value {"text":" - (Changes have been made)","color":"green"}
+execute if score @s ml_aj.temp matches 1 run data modify storage ml_aj:logic data.player.temp.edited set value {"text":" - (以对模型做出更改)","color":"green"}
 
 data remove storage ml_aj:logic data.spawn.save_check

@@ -1,6 +1,6 @@
 ## function minecraft:load
 
-tellraw @a[tag=admin] "[MLAJ] Datapack Loaded"
+tellraw @a[tag=admin] "[MLAJ] 数据包已成功加载"
 #Force loading of chunk 0 0 is done by system/data/trig/init
 
 #Scoreboard

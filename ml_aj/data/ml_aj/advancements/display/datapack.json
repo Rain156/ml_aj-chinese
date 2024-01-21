@@ -4,7 +4,7 @@
 			"item": "minecraft:zombie_head"
 		},
 		"title": "MLAJ",
-		"description": "协助使用Animated Java,使自定义更加简单",
+		"description": "Animated Java的游戏内编辑器,使自定义更加简单",
 		"show_toast": false,
 		"announce_to_chat": false
 	},

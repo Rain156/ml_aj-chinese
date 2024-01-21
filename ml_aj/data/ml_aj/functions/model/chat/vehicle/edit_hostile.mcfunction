@@ -8,6 +8,6 @@ scoreboard players set @s ml_aj.temp 0
 $execute if data storage ml_aj:logic {data:{player:{temp:{hostile:"$(hostile)"}}}} store result score @s ml_aj.temp as $(id) run function ml_aj:model/chat/vehicle/edit_hostile_final {hostile:0}
 $execute unless data storage ml_aj:logic {data:{player:{temp:{hostile:"$(hostile)"}}}} store result score @s ml_aj.temp as $(id) run function ml_aj:model/chat/vehicle/edit_hostile_final {hostile:1}
 
-execute if score @s ml_aj.temp matches 0 run function ml_ces:event/schedule/set {time:1,measure:"t",command:'function ml_aj:system/player/notice/display {text:"The mob type you selected requires this mob to be hostile.",color:"red",bold:false}'}
+execute if score @s ml_aj.temp matches 0 run function ml_ces:event/schedule/set {time:1,measure:"t",command:'function ml_aj:system/player/notice/display {text:"您选择的生物类型要求“是否敌对”选项必须为True",color:"red",bold:false}'}
 
 $function ml_aj:model/chat/vehicle/display {id:"$(id)"}

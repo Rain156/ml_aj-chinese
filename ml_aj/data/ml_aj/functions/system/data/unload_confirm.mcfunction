@@ -43,4 +43,4 @@ function ml_ces:system/event/player/attack/remove_generic {command:"function ml_
 datapack disable "file/ml_aj"
 datapack disable "file/ml_aj.zip"
 
-tellraw @s {"text":"\n[MLAJ] datapack has been unloaded.\n","color":"green"}
+tellraw @s {"text":"\n[MLAJ] 数据包已卸载.\n","color":"green"}

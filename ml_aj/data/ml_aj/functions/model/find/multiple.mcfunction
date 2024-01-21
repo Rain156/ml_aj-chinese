@@ -3,7 +3,7 @@
 
 function ml_aj:system/player/chat_clear
 
-tellraw @s [{"text":"\n","color":"#C29C54"},{"text":"Multiple AJ model entities were found. Select which entity you would like to edit:\n"}]
+tellraw @s [{"text":"\n","color":"#C29C54"},{"text":"找到了多个AJ模型,请选择您想要编辑的模型.\n"}]
 
 #Loop through the model entities that were found
 tag @s add ml_aj.searching

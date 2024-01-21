@@ -3,7 +3,7 @@
 ## "id": The model's UUID string
 ## "name": The model name
 
-$execute if function ml_aj:model/is_outdated run data modify storage ml_aj:logic data.player.temp.outdated set value [{"text":"  |  "},{"text":" [*Reload Model*] ","color":"#f2d1a2","hoverEvent":{"action":"show_text","contents":"Reload this outdated AJ Model"},"clickEvent":{"action":"run_command","value":"/function ml_aj:model/chat/reload {id:\"$(id)\",name:\"$(name)\"}"}}]
+$execute if function ml_aj:model/is_outdated run data modify storage ml_aj:logic data.player.temp.outdated set value [{"text":"  |  "},{"text":" [*重载模型*] ","color":"#f2d1a2","hoverEvent":{"action":"show_text","contents":"重载这个旧的AJ模型"},"clickEvent":{"action":"run_command","value":"/function ml_aj:model/chat/reload {id:\"$(id)\",name:\"$(name)\"}"}}]
 
 data remove entity @s item.tag.data.vehicle_temp
 data remove entity @s item.tag.data.vehicle_set
@@ -17,4 +17,4 @@ execute unless data entity @s item.tag.data.auto_reload run data modify storage 
 
 #Pet Owner
 execute if entity @s[tag=ml_aj.is_pet] if data entity @s item.tag.data.owner run data modify storage ml_aj:logic data.player.temp.owner set from entity @s item.tag.data.owner
-$execute if entity @s[tag=ml_aj.is_pet] if data entity @s item.tag.data.owner run data modify storage ml_aj:logic data.player.temp.pet_remove set value [{"text":"  | "},{"text":" [Remove] ","color":"red","hoverEvent":{"action":"show_text","contents":"Click to remove the pet owner"},"clickEvent":{"action":"run_command","value":"/function ml_aj:model/chat/pet_remove {id:\"$(id)\"}"}}]
+$execute if entity @s[tag=ml_aj.is_pet] if data entity @s item.tag.data.owner run data modify storage ml_aj:logic data.player.temp.pet_remove set value [{"text":"  | "},{"text":" [删除] ","color":"red","hoverEvent":{"action":"show_text","contents":"删除此宠物的所有者"},"clickEvent":{"action":"run_command","value":"/function ml_aj:model/chat/pet_remove {id:\"$(id)\"}"}}]

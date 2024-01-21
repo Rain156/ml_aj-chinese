@@ -1,5 +1,5 @@
 ## player context
 
-tellraw @s [{"text":"\nFailed to summon the Animated Java model with the name '","color":"red"},{"storage":"ml_aj:logic","nbt":"data.player.temp.name","color":"gold"},{"text":"'. Please make sure the name matches the Animated Java project name.\n","color":"red"}]
+tellraw @s [{"text":"\n未能生成名为: '","color":"red"},{"storage":"ml_aj:logic","nbt":"data.player.temp.name","color":"gold"},{"text":"' 的AJ模型,请确保名称与Animated Java项目名称匹配\n","color":"red"}]
 
 return 0

@@ -4,7 +4,7 @@
 			"item": "minecraft:stone"
 		},
 		"title": "MLAJ",
-		"description": "MLAJ Datapack",
+		"description": "MLAJ 数据包",
         "background": "minecraft:textures/block/gray_concrete.png",
 		"show_toast": false,
 		"announce_to_chat": false
